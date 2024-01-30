@@ -1,5 +1,5 @@
 ---
-title: GTR FAQ 2.0
+title: 
 draft: false
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: <% tp.file.title %>
+title: Setup Microsoft SQL Server
 draft: true
 tags:
 ---
