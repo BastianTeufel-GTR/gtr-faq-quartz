@@ -1,13 +1,19 @@
+---
+title: Z Height Offset
+draft: false
+tags:
+---
+
 # Z Height Offset Calc
 
-!!! info "Information"
-    This value is only available/important for wire EDM versions of ProfDia/Exprog!
+> [!info]
+> This value is only available/important for wire EDM versions of ProfDia/Exprog!
 
 After doing the machine setup GTR recommends to do a double-U test cut. With this test cut the correct Z-height will be determined for programming. Maintaining inaccuracy after the setup can be compensated.
  
 
-!!! info "Information"
-    Wrong Z values impact the cuttig result for axial angle tools and axial free angle tools negatively.
+> [!info]
+> Wrong Z values impact the cuttig result for axial angle tools and axial free angle tools negatively.
 
 For the test cut you have to do a DXF-drawing with correct values.
 
@@ -17,8 +23,8 @@ For the test cut you have to do a DXF-drawing with correct values.
 The profile has to be drawn like in the picture above. At the end of the profile (left side) is just a move away movement to ensure, that the cut out material falls apart. The  profile has to be drawn on the correct tool-radius (orientation to existing test plate). If the test cut has to be repeated, it is possible to set a diameter offset.
 
 
-!!! danger "Warning"
-    The offset value refers to the **diameter** not the radius
+> [!danger]
+> The offset value refers to the **diameter** not the radius
 
 
 ![Double-U Profile Dimensioned](images/DoubleU_Dim.png)
@@ -67,15 +73,14 @@ If value B1 is measured B1 <> 1mm, the ProfDia toolbox calculates a correction v
 After inserting **Z-zero**, re-do the test cut and measure B1 and B2 again. The widths B1 and B2 should now be similar to 1mm. If you are unsurea about the result feel free to contact us.
 
 
-!!! info "Information"
-    Are the widths after a repeated test cut still different, then there is a problem with the principal setting of the connected machine.
-    In this case we recommend you to to do a complete alignment incl. zero point setup
-    
-    
-    - Check all relevant components for wear and correct installation (wire guides, ...) 
-    - Straighten the wire
-    - Determine wire deflection points
-    - Set Z-zero to 0
-    - Re-do the test cut
+> [!info]
+> Are the widths after a repeated test cut still different, then there is a problem with the principal setting of the connected machine.
+> In this case we recommend you to to do a complete alignment incl. zero point setup
+> - Check all relevant components for wear and correct installation (wire guides, ...) 
+> - Straighten the wire
+> - Determine wire deflection points
+> - Set Z-zero to 0
+> - Re-do the test cut
+
 
 

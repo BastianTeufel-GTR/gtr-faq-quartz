@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Activate Demoversion
+draft: false
+tags:
 ---
 
 # Activating Demoversion (old ProfDia Installation < 2016)

@@ -1,3 +1,9 @@
+---
+title: <% tp.file.title %>
+draft: true
+tags:
+---
+
 # Symlink TechnoDB
 
 The TechnoDB_Symlinker.exe needs **Admin** rights!

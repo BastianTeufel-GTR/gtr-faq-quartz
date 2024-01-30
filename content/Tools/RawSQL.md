@@ -1,3 +1,9 @@
+---
+title: <% tp.file.title %>
+draft: true
+tags:
+---
+
 # Raw SQL comand
 
 This toolbox function executes SQL commands.

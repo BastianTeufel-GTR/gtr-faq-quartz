@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Tips and Tricks
+draft: false
+tags:
 ---
 
 On this page all known problems related to the BDE database engine will be listed with a possible solution.

@@ -1,3 +1,9 @@
+---
+title: <% tp.file.title %>
+draft: true
+tags:
+---
+
 # Network Connection Helper
 
 This is a Windows service that watches in the background that the automation interface remains active (watchdog for ProfDia / ProfDiaF services).

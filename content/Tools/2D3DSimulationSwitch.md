@@ -1,3 +1,9 @@
+---
+title: <% tp.file.title %>
+draft: true
+tags:
+---
+
 # 2D - 3D Simulation Switch
 
 This allows switching between 2D and 3D simulation without exiting the application.

@@ -1,3 +1,9 @@
+---
+title: <% tp.file.title %>
+draft: true
+tags:
+---
+
 # Demo Version Switch
 
 The application has the file name ToggleDemoMode.exe.

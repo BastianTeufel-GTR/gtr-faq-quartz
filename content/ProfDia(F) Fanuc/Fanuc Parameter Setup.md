@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Fanuc Parameter Setup
+draft: false
+tags:
 ---
 
 # ProfDia Machine Setup

@@ -1,6 +1,9 @@
 ---
-dg-publish: true
+title: Migrate from Firebird to MSSQL
+draft: false
+tags:
 ---
+
 >[!summary] 
 >When the BDE database was migrated to Firebird in a first step, or a company decides to move from Firebird to MS SQL at a later point, this guide can be used
 

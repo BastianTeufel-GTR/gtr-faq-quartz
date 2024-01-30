@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Database Migration BDE-SQL
+draft: false
+tags:
 ---
 
 # Database Migration BDE -> SQL

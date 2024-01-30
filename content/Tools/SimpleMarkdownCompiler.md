@@ -1,3 +1,9 @@
+---
+title: <% tp.file.title %>
+draft: true
+tags:
+---
+
 # Simple Markdown Compiler
 
 The .exe to be executed has the name **SimpleMarkdownCompiler.exe**.

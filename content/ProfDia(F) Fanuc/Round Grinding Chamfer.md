@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Round Grinding Chamfer
+draft: false
+tags:
 ---
 
 # Round grinding chamfer

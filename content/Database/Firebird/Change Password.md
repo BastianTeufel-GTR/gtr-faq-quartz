@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Change Password
+draft: false
+tags:
 ---
 
 # Change Password for a Firebird Database user

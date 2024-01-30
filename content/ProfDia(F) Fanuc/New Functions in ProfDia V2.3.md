@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: New Functions in ProfDia V2.3
+draft: false
+tags:
 ---
 
 # New Functions in ProfDia V2.3

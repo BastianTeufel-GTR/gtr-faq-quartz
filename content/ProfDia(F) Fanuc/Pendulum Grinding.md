@@ -1,6 +1,9 @@
 ---
-dg-publish: true
+title: Pendulum Grinding
+draft: false
+tags:
 ---
+
 ## Pendulum grinding / eroding
 
 ### Setup

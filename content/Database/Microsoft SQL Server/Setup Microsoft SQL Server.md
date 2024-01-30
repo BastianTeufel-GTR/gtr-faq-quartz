@@ -1,6 +1,9 @@
 ---
-dg-publish: true
+title: Setup Microsoft SQL Server
+draft: false
+tags:
 ---
+
 ## Preface
 
 To use this guide, the following software has to be installed and configured

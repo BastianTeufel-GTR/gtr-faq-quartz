@@ -1,3 +1,9 @@
+---
+title: <% tp.file.title %>
+draft: true
+tags:
+---
+
 # KFG2XML
 
 This program converts old Kfg project files into the current XML format.

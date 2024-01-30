@@ -1,3 +1,9 @@
+---
+title: CodeMeter Related
+draft: false
+tags:
+---
+
 # CodeMeter
 
 Use this function to gather inforamtion about a CodeMeter dongle. Just plug in your dongle into the PC and click **Search GTR Key**. After a few seconds the re LED will turn into a green LED. Also your CodeMeter **serial number** will be displayed.

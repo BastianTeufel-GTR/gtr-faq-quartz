@@ -1,3 +1,9 @@
+---
+title: Database Restore Firebird Backup
+draft: false
+tags:
+---
+
 # Firebird database recovery
 
 ## Summary

@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Network Error 100
+draft: false
+tags:
 ---
 
 ### Q: Error: A network error occured, Error 100

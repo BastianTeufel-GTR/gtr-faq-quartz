@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Create CodeMeter Content File
+draft: false
+tags:
 ---
 
 ### Q: How can I manually create a control file for a CodeMeter Dongle?

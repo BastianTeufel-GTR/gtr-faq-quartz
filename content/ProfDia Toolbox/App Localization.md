@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: App Localization
+draft: false
+tags:
 ---
 
 # App Localization

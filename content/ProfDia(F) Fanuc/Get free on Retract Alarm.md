@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Get free on Retract Alarm
+draft: false
+tags:
 ---
 
 # Get free on Retract Alarm

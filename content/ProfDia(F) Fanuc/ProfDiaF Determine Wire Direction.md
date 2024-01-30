@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: ProfDiaF Determine Wire Direction
+draft: false
+tags:
 ---
 
 # Detect on which side of the contour the wire travels

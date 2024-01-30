@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Common Setup Issues
+draft: false
+tags:
 ---
 
 # Collection of Issues while running the ProfDia setup

@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Combined Inner- and Outer contours
+draft: false
+tags:
 ---
 
 ## Preparing DXF contour

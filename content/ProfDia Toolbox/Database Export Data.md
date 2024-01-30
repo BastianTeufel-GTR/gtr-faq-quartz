@@ -1,7 +1,13 @@
+---
+title: Database Export Data
+draft: false
+tags:
+---
+
 # Export Database Project
 
-!!! info "Information"
-    In principal this function is the same as the procect export function in ProfDia
+> [!info]
+   In principal this function is the same as the procect export function in ProfDia
 
 ![Export Projects](images/DatabaseExportData.png)
 

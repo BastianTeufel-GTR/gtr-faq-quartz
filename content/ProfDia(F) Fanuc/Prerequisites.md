@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Prerequisites
+draft: false
+tags:
 ---
 
 # ProfDia Prerequisites

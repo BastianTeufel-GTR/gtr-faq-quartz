@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: ProfDiaF Setup Parameter Explanation
+draft: false
+tags:
 ---
 
 # Explanation of the parameters in the setup program
