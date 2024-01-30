@@ -1,10 +1,11 @@
 ---
-title: 
+title: Welcome
 draft: false
 ---
 
-This is the new GTR FAQ Collection.
-Please check the navigation or the search box to find help.
+Welcome to the newly setup GTR FAQ Collection
+
+Please check the navigation or the search box to get help.
 
 > [!info]
 > The FAQ is under heavy development. So not everything might be available.

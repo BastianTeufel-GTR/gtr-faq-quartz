@@ -4,7 +4,6 @@ draft: false
 tags:
 ---
 
-# Application backup and restore
 
 Using this function, a backup and restore of all settings from ProfDia(F) / Exprog installations can be easily made.
 

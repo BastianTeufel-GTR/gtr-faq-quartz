@@ -4,11 +4,9 @@ draft: false
 tags:
 ---
 
-## Visualize Measurement Data
-
 With this function you can evaluate grphically the latest measuring data from your current project.
 
-![Visualize Measurement Data](images/VIsualizeMeasurementData_01.png)
+![[VIsualizeMeasurementData_01.png]]
 
 > [!info]
 > To be able to read out this data, the following points must be observed:

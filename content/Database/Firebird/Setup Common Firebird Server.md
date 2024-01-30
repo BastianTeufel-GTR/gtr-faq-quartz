@@ -1,6 +1,6 @@
 ---
 title: Setup Common Firebird Server
-draft: false
+draft: true
 tags:
 ---
 

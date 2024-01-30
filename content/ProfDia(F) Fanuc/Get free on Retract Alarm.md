@@ -4,8 +4,6 @@ draft: false
 tags:
 ---
 
-# Get free on Retract Alarm
-
 1.  Go into "Step" mode
 2.  Move away in 1/10 increments until there is no more short circuit
 3.  Press D-Pos Button 

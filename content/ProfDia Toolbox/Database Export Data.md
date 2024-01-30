@@ -4,12 +4,11 @@ draft: false
 tags:
 ---
 
-# Export Database Project
 
 > [!info]
    In principal this function is the same as the procect export function in ProfDia
 
-![Export Projects](images/DatabaseExportData.png)
+![[DatabaseExportData.png]]
 
 By clicking the button **Read all Proj** all projects from the database are loaded. Select the project you want to export from the drop down menu **Project ID**.
 In **Target Base directory** your output directory must be set.

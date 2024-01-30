@@ -8,12 +8,12 @@ tags:
 
 ### A1: Dongle damaged or runtime problem
 
-![Error Message](images/CodeMeter_NoEntryFound_200.png)<br>
+![[CodeMeter_NoEntryFound_200.png]]<br>
 
 
 1. Restart the PC / machine<br>
 2. Plug out the CM Dongle<br>
-3. Open the CodeMeter Control Center (Icon in the Windows Taskbar) by double clicking on it ![Runtime Icon](images/CodeMeterRuntime_Icon.png)<br>
+3. Open the CodeMeter Control Center (Icon in the Windows Taskbar) by double clicking on it ![[CodeMeterRuntime_Icon.png]]<br>
 3.1 When no Windows taskbar is visible, open Windows Explorer and enter CodeMeterCC.exe as address and press enter
 4. The icon should be colored gray, showing that no CM stick is inserted.
 5. Re-Insert the GTR CM Dongle

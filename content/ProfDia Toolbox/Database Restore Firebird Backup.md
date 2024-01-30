@@ -4,8 +4,6 @@ draft: false
 tags:
 ---
 
-# Firebird database recovery
-
 ## Summary
 
 With Firebird based software products from GTR, a freeware software called **GBAK Scheduler** [^1] is also installed. This software is doing a database backup.
@@ -37,10 +35,10 @@ The ProfDiaToolbox program is required to restore the respective database. This 
 
 Start the ProfDiaToolbox application by double-clicking ProfDiaToolbox.exe in the installation directory.
 
-![Toolbox Start](images/toolbox-start.png)
+![[toolbox-start.png]]
 
 Click on "1" and select **Database Restore Backup (Firebird)**.
-![Toolbox Restore View](images/toolbox-restore-view.png)
+![[toolbox-restore-view.png]]
 
 The **Username** and **Password** fields are pre-populated with the default data for the database administrator.
 
@@ -55,11 +53,10 @@ After pressing the **Restore** button, a black window appears with the actual re
 The ProfDiaToolbox can now be closed again. The database is now ready for use again.
 
 
-!!!info "Hint for ProfDia Toolbox Versions <1.21.0"
-    For older versions of ProfDia Toolbox, the following points must be observed:
-
-	- for plain-set backups, the file extension must be adjusted manually in the backup file selection. To do this, enter ***** in the text field of the database name and confirm with Enter. This will display all files in the current directory. A selection of the backup file is thus easily possible.
-	- Before the actual restore, the existing database file must be deleted or renamed.
+> [!info] Hint for ProfDia Toolbox Versions <1.21.0
+> For older versions of ProfDia Toolbox, the following points must be observed:
+> - for plain-set backups, the file extension must be adjusted manually in the backup file selection. To do this, enter ***** in the text field of the database name and confirm with Enter. This will display all files in the current directory. A selection of the backup file is thus easily possible.
+> - Before the actual restore, the existing database file must be deleted or renamed.
 	
 	
 ## Manual database recovery using gbak.exe
@@ -69,7 +66,7 @@ It is possible to restore the database from the command line using gbak.exe. The
 - C:\\Program Files (x86)\\Firebird\\Firebird_2\_5\\bin
 
 The installation directory can also be determined in the green box at the bottom of the graphic.
-![PDRestoreView](images/toolbox-restore-view.png) 
+![[toolbox-restore-view.png]]
 
 Command for recovery:
 
@@ -84,15 +81,15 @@ Example:
 -   Confirm by pressing **enter**
 
 
-![Command line Window 1](images/cmd_line_01.png)
+![[cmd_line_01.png]]
 
 -   Go in the cmd window to your installation path
 
-![Command line Window 2](images/cmd_line_02.png)
+![[cmd_line_02.png]]
 
--  Insert the recivery command and confirm with **enter**
+-  Insert the recovery command and confirm with **enter**
 
-![Command line Window 3](images/cmd_line_03.png)
+![[cmd_line_03.png]]
 
 The recovery process is done!
 

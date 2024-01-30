@@ -1,6 +1,6 @@
 ---
 title: Merge SQL Databases
-draft: false
+draft: true
 tags:
 ---
 

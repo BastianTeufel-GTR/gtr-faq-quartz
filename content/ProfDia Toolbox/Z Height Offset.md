@@ -4,7 +4,6 @@ draft: false
 tags:
 ---
 
-# Z Height Offset Calc
 
 > [!info]
 > This value is only available/important for wire EDM versions of ProfDia/Exprog!
@@ -18,7 +17,7 @@ After doing the machine setup GTR recommends to do a double-U test cut. With thi
 For the test cut you have to do a DXF-drawing with correct values.
 
 
-![Double-U Profile](images/DoubleU.png)
+![[DoubleU.png]]
 
 The profile has to be drawn like in the picture above. At the end of the profile (left side) is just a move away movement to ensure, that the cut out material falls apart. The  profile has to be drawn on the correct tool-radius (orientation to existing test plate). If the test cut has to be repeated, it is possible to set a diameter offset.
 
@@ -27,12 +26,12 @@ The profile has to be drawn like in the picture above. At the end of the profile
 > The offset value refers to the **diameter** not the radius
 
 
-![Double-U Profile Dimensioned](images/DoubleU_Dim.png)
+![[DoubleU_Dim.png]]
 
 The dimensions of the test cut are quite simple. The edge lengths are always 1mm. If necessary (thicker material) the edge lengths can also be increased with consultating GTR. The test cut inerits axial angles and radial angles.
 
 
-![Double-U Profile Angles](images/DoubleU_Angles.png)
+![[DoubleU_Angles.png]]
 
 Settings for the subcontour:
 
@@ -54,19 +53,19 @@ If the test cut is finished, measure B2 and B2 and insert the values in the corr
 Additionally you have to select, whether the PCD surface is up or down aligned.
 
 
-![Z Height Offset Calc](images/ZHeightOffsetCalc.png)
+![[ZHeightOffsetCalc.png]]
 
 After the values are inserted, click **calculate**. The software now is calculating the Z-height offset and also a correction value for the wire offset.
 The Z hieght correction has to be set now in ProfDia.
 Start ProfDia and click **Setings for connected machine**.
 
 
-![Setings for connected machine](images/ZHeightOffsetCalc_ProfDia_01.png)
+![[ZHeightOffsetCalc_ProfDia_01.png]]
 
 In the small window insert the calculated value at **Z-zero.**
 
 
-![Z-zero](images/ZHeightOffsetCalc_ProfDia_02.png)
+![[ZHeightOffsetCalc_ProfDia_02.png]]
 
 If value B1 is measured B1 <> 1mm, the ProfDia toolbox calculates a correction value for the wire offsets. This offsets have to be set at the relevant technologies.
 

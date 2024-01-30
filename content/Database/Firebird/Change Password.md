@@ -4,7 +4,8 @@ draft: false
 tags:
 ---
 
-# Change Password for a Firebird Database user
+
+## Change Password for a Firebird Database user
 
 The default credentials for FireBird are
 
@@ -24,12 +25,12 @@ If this default settings need to be changed follow the guide below
  cd '.\Program Files (x86)\Firebird\Firebird_2_5\bin\'
 ````
 
-![](images/fb_001_changepwd.png)
+![[fb_001_changepwd.png]]
 
 call gsec.exe to set a new password like shown below:
 
 
-![](images/fb_002_changepwd.png)
+![[fb_002_changepwd.png]]
 
 ````sh
 .\gsec.exe -user sysdba -password masterkey -database "C:\Program Files (x86)\Firebird\Firebird_2_5\security2.fdb"
@@ -67,7 +68,7 @@ Start ProfDia / ExProg Toolbox and open the **Database configuration** tab
 
 Click **Load from INI** to load the current configuration
 
-![](images/fb_003_changepwd.png)
+![[fb_003_changepwd.png]]
 
 Enter the new password in the password field and apply the changes by pressing the **Setup Database** button.
 

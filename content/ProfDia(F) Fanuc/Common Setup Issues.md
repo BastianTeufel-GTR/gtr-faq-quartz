@@ -4,9 +4,6 @@ draft: false
 tags:
 ---
 
-# Collection of Issues while running the ProfDia setup
-
-
 ### Q: I get the Error on successive palpations
 
 This means that while touching on the **same** spot on the mandrel for 3 times, the deviation from probing to probing is **>3µm**

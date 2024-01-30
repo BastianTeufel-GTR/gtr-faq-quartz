@@ -4,7 +4,6 @@ draft: false
 tags:
 ---
 
-# Database Migration BDE -> SQL
 
 >[!info]
 > For further information check the ProfDia manual.

@@ -4,9 +4,6 @@ draft: false
 tags:
 ---
 
-# App Localization
-
-
 This function enforces a specific language in all internationalized GTR software products (if available). By default, the application language is based on the operating system language.
 If a language is not available, the application defaults to **English**.
 

@@ -4,9 +4,9 @@ draft: false
 tags:
 ---
 
-# ProfDia Machine Setup
+## ProfDia Machine Setup
 
-## Important Parameter Settings in FANUC control Alpha iD and up
+### Important Parameter Settings in FANUC control Alpha iD and up
 
 To successfully use the ProfDia Software with the FANUC EDM, the following parameters need to be set on the control.
 
