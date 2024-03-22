@@ -16,7 +16,7 @@ A:
 
 ### Q: The wire does not start probing the mandrel, it moves to the opposite direction or directly to the circumference of the mandrel
 
-A: The Parameter "Ignore G70, G71, G72" is not properly set. Please check the [[Prerequisites]]
+A: The Parameter "Ignore G70, G71, G72" is not properly set. Please check the [[content/ProfDia(F) Fanuc/Prerequisites]]
 
 
 ### Q: I have issues with the conductivity
