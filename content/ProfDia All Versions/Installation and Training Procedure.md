@@ -25,3 +25,7 @@ GTR will prepare the ProfDia(F) projects prior to the training and make the trai
 > [!note] Note
 > For the training session an engineer or technician of the machine manufacturer needs to be at the customers site for setting up the parameters on the control as well as technical or technology related questions
 
+
+# How to prepare the drawings
+
+Here will be some additional pictures
