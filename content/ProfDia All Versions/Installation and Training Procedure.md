@@ -28,4 +28,4 @@ GTR will prepare the ProfDia(F) projects prior to the training and make the trai
 
 # How to prepare the drawings
 
-Here will be some additional pictures
+See the [[DXF Preparation]] topic for further information on howto prepare the DXF drawings correct.
