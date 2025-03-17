@@ -15,6 +15,26 @@ To successfully use the ProfDia Software with the FANUC EDM, the following param
 > For older Fanuc EDM models please consult the installation check list which comes with the software
 
 
+### CNC Parameters Fanuc Alpha CiC and newer
+
+| Param. No | Bit | Value                           | Function / Purpose                                                                     |
+| --------- | --- | ------------------------------- | -------------------------------------------------------------------------------------- |
+| 1008[A]   | 0   | 1                               | Rotary Axis Roll over is Valid (1) (ROA)                                               |
+| 1008[A]   | 1   | 0                               | Move A-Axis the shortest way to programmed position (RAB)                              |
+| 1008[A]   | 2   | 1                               | Relative coordinates (RRL) are rounded by the amount of the shift per one rotation (1) |
+| 1420      |     | e.g. 1080 for Hirschmann Rotary | Rotation speed for A-axis, Value probably dependent on brand and type of A-axis        |
+| 3454      | 4   | 1                               | Enable “bit-setting” with argument “Q” via program                                     |
+| 15150     | 0   | 1                               | Disable block ahead reading at M00/M01 (BST)                                           |
+| 15320     | 0   | 1                               | Macro variable range > 13000 available (MEX)                                           |
+| 15820     | 0   | 0                               | Straightness compensation OFF (WCC)                                                    |
+| 15886     | 0   | 0                               | Trimm function OFF (WNT)                                                               |
+| 16980     | 7   | 1                               | Switch on PCD Generator (if available)                                                 |
+| 16981     | 2   | 1                               | Enables Collision detection (Abnormal probe status)                                    |
+
+> [!danger] Note
+> Do not enable the `Straightness Clearance Option` in the Handy Settings.
+> This will modify/reset internal CNC parameters
+
 
 ### CNC Parameters
 
