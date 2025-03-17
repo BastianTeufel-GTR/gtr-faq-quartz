@@ -34,12 +34,13 @@ To successfully use the ProfDia Software with the FANUC EDM, the following param
 
 ### Keep Relay Parameters
 
-|Param. No| Bit | Value | Function / Purpose |
-| ---     | --- | ---- | ----- |
-|KR11 | 3 | 1| Switches Generator mode from NAK to PCD (if available) |
-|KR11 | 5 | 1| G10 Output of Cutting Tech |
-|KR12 | 0 | 1| Variables >13000 visible on control screen |
-|KR12 | 1 | 1| Variables >500 visible on control screen |
+| Param. No | Bit | Value | Function / Purpose                                     |
+| --------- | --- | ----- | ------------------------------------------------------ |
+| KR06      | 1   | 1     | Activate override operation with M15 Pxx commands      |
+| KR11      | 3   | 1     | Switches Generator mode from NAK to PCD (if available) |
+| KR11      | 5   | 1     | G10 Output of Cutting Tech                             |
+| KR12      | 0   | 1     | Variables >13000 visible on control screen             |
+| KR12      | 1   | 1     | Variables >500 visible on control screen               |
 
 ### Probe Parameters
 
