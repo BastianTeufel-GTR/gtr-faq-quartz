@@ -6,13 +6,22 @@ tags:
 
 ## ProfDia Machine Setup
 
-### Important Parameter Settings in FANUC control Alpha iD and up
+### Important Parameter Settings in FANUC control Alpha 0iD and up
 
-To successfully use the ProfDia Software with the FANUC EDM, the following parameters need to be set on the control.
+To successfully use the ProfDia Software with the FANUC EDM, the following parameters need to be set on the control by a Fanuc Technician or Engineer.
 
 > [!note] 
-> The parameter list below applies to FANUC EDM models Alpha iD and newer.
-> For older Fanuc EDM models please consult the installation check list which comes with the software
+> The parameter list below applies to FANUC EDM models Alpha 0iD and newer.
+> For older Fanuc EDM models please consult the installation check list which comes with the software. The Parameternamedescriptions have changed on the Alpha CiC machines, please check the correct chapter for your machine.
+> 
+> [[#CNC Parameters Fanuc Alpha CiC and newer]]
+> [[#CNC Parameters Alpha 0iD - Alpha CiB]]
+
+### Notes
+
+> [!danger] Straightness Clearance Option
+> Do not enable the `Straightness Clearance Option` in the Handy Settings.
+> This will modify/reset internal CNC parameters
 
 
 ### CNC Parameters Fanuc Alpha CiC and newer
@@ -31,12 +40,8 @@ To successfully use the ProfDia Software with the FANUC EDM, the following param
 | 16980     | 7   | 1                               | Switch on PCD Generator (if available)                                                 |
 | 16981     | 2   | 1                               | Enables Collision detection (Abnormal probe status)                                    |
 
-> [!danger] Note
-> Do not enable the `Straightness Clearance Option` in the Handy Settings.
-> This will modify/reset internal CNC parameters
 
-
-### CNC Parameters
+### CNC Parameters Alpha 0iD - Alpha CiB
 
 | Param. No | Bit | Value                           | Function / Purpose                                                                     |
 | --------- | --- | ------------------------------- | -------------------------------------------------------------------------------------- |
