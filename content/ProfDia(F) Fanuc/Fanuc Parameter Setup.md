@@ -15,7 +15,10 @@ To successfully use the ProfDia Software with the FANUC EDM, the following param
 > For older Fanuc EDM models please consult the installation check list which comes with the software. The Parameternamedescriptions have changed on the Alpha CiC machines, please check the correct chapter for your machine.
 > 
 > [[#CNC Parameters Fanuc Alpha CiC and newer]]
+> 
 > [[#CNC Parameters Alpha 0iD - Alpha CiB]]
+
+
 
 ### Notes
 
