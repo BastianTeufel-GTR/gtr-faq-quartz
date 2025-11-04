@@ -213,18 +213,16 @@ Firewall Rule:
 
 **Troubleshooting steps:**
 1. Verify TCP 21115 and UDP/TCP 21116 are open outbound in firewall
-2. Test connectivity with: `telnet rustdesk-servers.com 21115` (or use PowerShell)
-3. If behind proxy: Verify proxy settings in RustDesk client (Settings → Network)
-4. Temporarily disable VPN to test direct connectivity
-5. Check if SSL inspection is blocking the connection; try adding exception
-6. Contact support if issue persists
+2. If behind proxy: Verify proxy settings in RustDesk client (Settings → Network)
+3. Temporarily disable VPN to test direct connectivity
+4. Check if SSL inspection is blocking the connection; try adding exception
 
 **Problem: "Connection times out after initial connect"**
 
 **Troubleshooting steps:**
 1. May indicate relay server issue; ensure both TCP and UDP rules are open
 2. Verify UDP 21116 is specifically allowed in firewall
-3. Test latency: `ping rustdesk-server-dns.com`
+3. Test latency: `ping www.rustdesk.com`
 4. If latency is very high (>500ms), connection may be routed through relay
 5. Try switching between direct/relay modes if available in client settings
 
