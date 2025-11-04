@@ -4,8 +4,6 @@ draft: false
 tags:
 ---
 
-# Remote Support: Transition from TeamViewer to RustDesk
-
 
 > [!tldr] tl;dr
 > - GTR will stop using TeamViewer starting on January 1st 2026
