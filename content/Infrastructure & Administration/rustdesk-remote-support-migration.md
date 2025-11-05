@@ -6,8 +6,9 @@ tags:
 
 
 > [!tldr] tl;dr
-> - GTR will stop using TeamViewer starting on January 1st 2026
-> - [Download Rustdesk on Github](https://github.com/rustdesk/rustdesk/releases/download/latest)
+> - GTR will stop using TeamViewer starting on January 1st, 2026
+> - [Download Latest Rustdesk Windows Version](https://staticfiles.gtr.de/rustdesk-latest-x86_64.exe)
+> - [Download Latest Rustdesk Windows Version as ZIP File](https://staticfiles.gtr.de/rustdesk-latest-x86_64.zip)
 
 ## Overview
 
@@ -44,7 +45,8 @@ RustDesk is compatible with a wide range of platforms:
 
 ### Getting Started
 
-1. **Download**: Visit [rustdesk.com](https://rustdesk.com) or [rustdesk on github](https://github.com/rustdesk/rustdesk/releases/download/latest) and download the client for your operating system
+1. **Download**: Directly download the latest version as an [Executable](https://staticfiles.gtr.de/rustdesk-latest-x86_64.exe) or [ZIP File](https://staticfiles.gtr.de/rustdesk-latest-x86_64.zip) from GTR's secure server.
+   Alternatively, visit [rustdesk.com](https://rustdesk.com) or [rustdesk on github](https://github.com/rustdesk/rustdesk/releases/download/latest) and download the client for your operating system
 2. **Install**: Depending on the Operating Systems, an Installation may be required. 
    Follow standard installation process, by executing the downloaded file.
    **On Windows RustDesk can be run without installation**
@@ -257,7 +259,7 @@ Firewall Rule:
 ## Support & Resources
 
 **For End-Users:**
-- RustDesk Download: https://rustdesk.com
+- RustDesk Download: https://staticfiles.gtr.de/rustdesk-latest-x86_64.exe
 - User Documentation: https://rustdesk.com/docs/
 
 **For IT Administrators:**
@@ -268,7 +270,7 @@ Firewall Rule:
 
 **Internal Support:**
 - Email: gtr-aa@gtr.de
-- Support Portal: [support portal](https://tickets.gtr.de)
+- Support Portal: [Support Portal](https://tickets.gtr.de)
 - Help Desk Phone: +49 7361 94 11 0
 
 ---
