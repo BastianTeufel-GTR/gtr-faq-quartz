@@ -23,9 +23,13 @@ Use the navigation menu or the search box to find help on specific topics.
 - [[RustDesk Migration]] - Complete guide for the transition from TeamViewer to RustDesk
 
 **Corrections & Enhancements**
+- Updated Quartz framework from 4.4.0 to 4.5.2
+- Widened navigation sidebar for better readability
 - Fixed incorrect page titles across multiple articles
+- Shortened long navigation titles for improved usability
 - Added searchable tags to all documentation pages
 - Translated remaining German content to English
+- Fixed broken image paths in documentation
 
 ## Quick Links
 
