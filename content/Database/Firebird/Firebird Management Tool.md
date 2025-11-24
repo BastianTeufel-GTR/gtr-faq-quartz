@@ -1,5 +1,5 @@
 ---
-title: GTR Firebird Database Management Tool
+title: Firebird Management Tool
 draft: false
 tags:
   - database
@@ -9,7 +9,7 @@ tags:
   - maintenance
 ---
 
-# GTR Firebird Database Management Tool - User Manual
+# Firebird Management Tool - User Manual
 
 ## Table of Contents
 
@@ -89,7 +89,7 @@ The GUI application has three tabs: **Setup**, **Operations**, and **Configurati
 
 This tab helps you configure the tool for first-time use.
 
-![Setup Tab](images/gtr-firebird-gui-setup-tab.png)
+![[gtr-firebird-gui-setup-tab.png]]
 
 #### What You See
 
@@ -123,7 +123,7 @@ This tab helps you configure the tool for first-time use.
 
 This is where you perform database operations.
 
-![Operations Tab](images/gtr-firebird-gui-operations-tab.png)
+![[gtr-firebird-gui-operations-tab.png]]
 
 #### Step 1: Select Your Database
 
@@ -192,7 +192,7 @@ Select one of the following:
 
 This tab lets you view and edit the settings file (`.env` file).
 
-![Configuration Tab](images/gtr-firebird-gui-configuration-tab.png)
+![[gtr-firebird-gui-configuration-tab.png]]
 
 
 #### The Settings File

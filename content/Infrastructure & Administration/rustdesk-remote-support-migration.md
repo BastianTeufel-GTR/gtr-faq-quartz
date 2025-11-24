@@ -1,5 +1,5 @@
 ---
-title: "Remote Support: Transition from TeamViewer to RustDesk"
+title: "RustDesk Migration"
 draft: false
 tags:
   - infrastructure

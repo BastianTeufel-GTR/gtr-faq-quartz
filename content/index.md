@@ -20,7 +20,7 @@ Use the navigation menu or the search box to find help on specific topics.
 
 **Improved Articles**
 - [[Database Configuration]] - Added Docker deployment instructions for Firebird 2.5 and 5.x servers
-- [[Remote Support: Transition from TeamViewer to RustDesk|RustDesk Migration]] - Complete guide for the transition from TeamViewer to RustDesk
+- [[RustDesk Migration]] - Complete guide for the transition from TeamViewer to RustDesk
 
 **Corrections & Enhancements**
 - Fixed incorrect page titles across multiple articles
