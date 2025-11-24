@@ -2,6 +2,9 @@
 title: Create CodeMeter Content File
 draft: false
 tags:
+  - codemeter
+  - licensing
+  - activation
 ---
 
 ### Q: How can I manually create a control file for a CodeMeter Dongle?

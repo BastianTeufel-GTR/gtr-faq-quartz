@@ -2,6 +2,10 @@
 title: Common Setup Issues
 draft: false
 tags:
+  - profdiaf
+  - fanuc
+  - troubleshooting
+  - setup
 ---
 
 ### Q: I get the Error on successive palpations

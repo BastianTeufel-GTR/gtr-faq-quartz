@@ -2,6 +2,10 @@
 title: Change Password
 draft: false
 tags:
+  - database
+  - firebird
+  - security
+  - configuration
 ---
 
 

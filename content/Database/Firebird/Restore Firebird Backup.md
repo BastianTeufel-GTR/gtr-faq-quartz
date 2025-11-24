@@ -1,7 +1,11 @@
 ---
-title: Database Restore Firebird Backup
+title: Restore Firebird Backup
 draft: false
 tags:
+  - database
+  - firebird
+  - backup
+  - restore
 ---
 
 ## Summary
@@ -35,10 +39,10 @@ The ProfDiaToolbox program is required to restore the respective database. This 
 
 Start the ProfDiaToolbox application by double-clicking ProfDiaToolbox.exe in the installation directory.
 
-![[toolbox-start.png]]
+![[content/ProfDia Toolbox/images/toolbox-start.png]]
 
 Click on "1" and select **Database Restore Backup (Firebird)**.
-![[toolbox-restore-view.png]]
+![[content/ProfDia Toolbox/images/toolbox-restore-view.png]]
 
 The **Username** and **Password** fields are pre-populated with the default data for the database administrator.
 
@@ -66,7 +70,7 @@ It is possible to restore the database from the command line using gbak.exe. The
 - C:\\Program Files (x86)\\Firebird\\Firebird_2\_5\\bin
 
 The installation directory can also be determined in the green box at the bottom of the graphic.
-![[toolbox-restore-view.png]]
+![[content/ProfDia Toolbox/images/toolbox-restore-view.png]]
 
 Command for recovery:
 
@@ -81,15 +85,15 @@ Example:
 -   Confirm by pressing **enter**
 
 
-![[cmd_line_01.png]]
+![[content/ProfDia Toolbox/images/cmd_line_01.png]]
 
 -   Go in the cmd window to your installation path
 
-![[cmd_line_02.png]]
+![[content/ProfDia Toolbox/images/cmd_line_02.png]]
 
 -  Insert the recovery command and confirm with **enter**
 
-![[cmd_line_03.png]]
+![[content/ProfDia Toolbox/images/cmd_line_03.png]]
 
 The recovery process is done!
 

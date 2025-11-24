@@ -2,6 +2,10 @@
 title: ProfDiaF Setup Parameter Explanation
 draft: false
 tags:
+  - profdiaf
+  - fanuc
+  - setup
+  - configuration
 ---
 
 # Explanation of the parameters in the setup program

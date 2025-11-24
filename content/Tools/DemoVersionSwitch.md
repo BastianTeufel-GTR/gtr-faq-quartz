@@ -1,7 +1,10 @@
 ---
-title: Setup Microsoft SQL Server
-draft: true
+title: Demo Version Switch
+draft: false
 tags:
+  - tools
+  - demo
+  - profdia
 ---
 
 # Demo Version Switch

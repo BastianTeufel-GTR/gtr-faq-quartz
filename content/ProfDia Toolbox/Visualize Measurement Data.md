@@ -2,6 +2,9 @@
 title: Visualize Measurement Data
 draft: false
 tags:
+  - toolbox
+  - measurement
+  - visualization
 ---
 
 With this function you can evaluate grphically the latest measuring data from your current project.

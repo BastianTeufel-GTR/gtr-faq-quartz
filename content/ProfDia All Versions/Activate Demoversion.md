@@ -2,6 +2,9 @@
 title: Activate Demoversion
 draft: false
 tags:
+  - profdia
+  - installation
+  - demo
 ---
 
 # Activating Demoversion (old ProfDia Installation < 2016)

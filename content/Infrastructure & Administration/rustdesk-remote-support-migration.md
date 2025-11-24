@@ -2,6 +2,10 @@
 title: "Remote Support: Transition from TeamViewer to RustDesk"
 draft: false
 tags:
+  - infrastructure
+  - remote-support
+  - networking
+  - security
 ---
 
 

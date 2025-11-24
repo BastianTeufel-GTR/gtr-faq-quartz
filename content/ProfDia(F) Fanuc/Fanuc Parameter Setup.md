@@ -2,6 +2,10 @@
 title: Fanuc Parameter Setup
 draft: false
 tags:
+  - profdiaf
+  - fanuc
+  - configuration
+  - cnc-parameters
 ---
 
 ## ProfDia Machine Setup

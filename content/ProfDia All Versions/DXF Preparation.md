@@ -1,7 +1,10 @@
 ---
 title: DXF Preparation
-draft: 
+draft: false
 tags:
+  - profdia
+  - dxf
+  - cad
 ---
 
 # Common advices

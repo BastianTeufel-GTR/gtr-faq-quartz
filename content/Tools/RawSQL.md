@@ -1,7 +1,10 @@
 ---
-title: Setup Microsoft SQL Server
-draft: true
+title: Raw SQL Command
+draft: false
 tags:
+  - tools
+  - database
+  - sql
 ---
 
 # Raw SQL comand

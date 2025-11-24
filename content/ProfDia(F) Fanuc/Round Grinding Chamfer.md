@@ -2,6 +2,10 @@
 title: Round Grinding Chamfer
 draft: false
 tags:
+  - profdia
+  - fanuc
+  - machining
+  - round-grinding
 ---
 
 # Round grinding chamfer

@@ -1,9 +1,12 @@
 ---
-title: Setup Microsoft SQL Server
+title: Inch Metric Switch
 draft: true
 tags:
+  - tools
+  - configuration
+  - units
 ---
 
 # Inch Metric Switch
 
-Dieses Tool setzt alle Werte korrekt auf INCH/Metric je nach Auswahl.
+This tool sets all values correctly to INCH or Metric depending on your selection.

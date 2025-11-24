@@ -2,6 +2,10 @@
 title: Combined Inner- and Outer contours
 draft: false
 tags:
+  - application-note
+  - profdia
+  - contour
+  - dxf
 ---
 
 ## Preparing DXF contour

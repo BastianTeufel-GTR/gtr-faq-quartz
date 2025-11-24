@@ -2,6 +2,10 @@
 title: Application Backup and Restore
 draft: false
 tags:
+  - toolbox
+  - backup
+  - restore
+  - configuration
 ---
 
 

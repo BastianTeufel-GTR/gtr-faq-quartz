@@ -1,7 +1,10 @@
 ---
-title: Setup Microsoft SQL Server
-draft: true
+title: Symlink TechnoDB
+draft: false
 tags:
+  - tools
+  - configuration
+  - database
 ---
 
 # Symlink TechnoDB
@@ -16,5 +19,6 @@ For example:
 
 When you run the application, Windows Explorer opens directly. Here please select your Techo_DB.ini to be linked.
 
-!!!hint "Hint"
-    Only a system link is created. However, it is not unreasonable to make a backup of the TechnoDB.ini beforehand.
+> [!hint] "Hint"
+>    Only a system link is created. However, it is not unreasonable to make a backup of the TechnoDB.ini beforehand.
+

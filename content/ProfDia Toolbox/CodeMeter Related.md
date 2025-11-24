@@ -2,6 +2,9 @@
 title: CodeMeter Related
 draft: false
 tags:
+  - toolbox
+  - codemeter
+  - licensing
 ---
 
 

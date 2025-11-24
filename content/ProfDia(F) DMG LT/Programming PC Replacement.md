@@ -2,6 +2,10 @@
 title: Programming PC Replacement
 draft: false
 tags:
+  - profdia
+  - dmg-lt
+  - migration
+  - installation
 ---
 
 # ProfDia LT20 / LT50 PT Prerequisites

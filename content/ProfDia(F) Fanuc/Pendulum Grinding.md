@@ -2,6 +2,10 @@
 title: Pendulum Grinding
 draft: false
 tags:
+  - profdia
+  - fanuc
+  - machining
+  - round-grinding
 ---
 
 ## Pendulum grinding / eroding

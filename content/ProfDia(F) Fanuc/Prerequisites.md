@@ -2,6 +2,11 @@
 title: Prerequisites
 draft: false
 tags:
+  - profdiaf
+  - fanuc
+  - installation
+  - requirements
+  - profdia
 ---
 
 # ProfDia Prerequisites

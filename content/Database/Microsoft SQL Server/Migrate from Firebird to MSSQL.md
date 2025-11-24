@@ -2,6 +2,10 @@
 title: Migrate from Firebird to MSSQL
 draft: false
 tags:
+  - database
+  - firebird
+  - mssql
+  - migration
 ---
 
 >[!summary] 

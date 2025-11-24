@@ -1,7 +1,10 @@
 ---
-title: Setup Microsoft SQL Server
-draft: true
+title: 2D 3D Simulation Switch
+draft: false
 tags:
+  - tools
+  - simulation
+  - profdia
 ---
 
 # 2D - 3D Simulation Switch

@@ -1,7 +1,10 @@
 ---
-title: Setup Microsoft SQL Server
-draft: true
+title: KFG to XML Converter
+draft: false
 tags:
+  - tools
+  - conversion
+  - file-format
 ---
 
 # KFG2XML

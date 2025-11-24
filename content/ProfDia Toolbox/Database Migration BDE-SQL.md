@@ -2,6 +2,10 @@
 title: Database Migration BDE-SQL
 draft: false
 tags:
+  - toolbox
+  - database
+  - migration
+  - bde
 ---
 
 

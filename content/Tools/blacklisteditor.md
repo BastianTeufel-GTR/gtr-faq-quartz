@@ -1,7 +1,10 @@
 ---
-title: Setup Microsoft SQL Server
-draft: true
+title: Blacklist Editor
+draft: false
 tags:
+  - tools
+  - configuration
+  - backup
 ---
 
 # Blacklisteditor

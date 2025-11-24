@@ -1,7 +1,11 @@
 ---
-title: Setup Microsoft SQL Server
-draft: true
+title: Network Connection Helper
+draft: false
 tags:
+  - tools
+  - networking
+  - service
+  - automation
 ---
 
 # Network Connection Helper

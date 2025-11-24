@@ -2,6 +2,10 @@
 title: ProfDiaF Determine Wire Direction
 draft: false
 tags:
+  - profdiaf
+  - fanuc
+  - wire-edm
+  - programming
 ---
 
 # Detect on which side of the contour the wire travels

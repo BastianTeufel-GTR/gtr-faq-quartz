@@ -2,6 +2,10 @@
 title: New Functions in ProfDia V2.3
 draft: false
 tags:
+  - profdiaf
+  - fanuc
+  - release-notes
+  - features
 ---
 
 # New Functions in ProfDia V2.3

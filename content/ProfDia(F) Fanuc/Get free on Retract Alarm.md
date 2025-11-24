@@ -2,6 +2,10 @@
 title: Get free on Retract Alarm
 draft: false
 tags:
+  - profdiaf
+  - fanuc
+  - troubleshooting
+  - wire-edm
 ---
 
 1.  Go into "Step" mode

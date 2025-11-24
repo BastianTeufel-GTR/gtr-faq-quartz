@@ -1,7 +1,10 @@
 ---
-title: Setup Microsoft SQL Server
-draft: true
+title: Simple Markdown Compiler
+draft: false
 tags:
+  - tools
+  - markdown
+  - conversion
 ---
 
 # Simple Markdown Compiler

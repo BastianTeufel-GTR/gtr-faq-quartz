@@ -2,10 +2,13 @@
 title: Merge SQL Databases
 draft: true
 tags:
+  - toolbox
+  - database
+  - migration
 ---
 
-# Datenbanken Zusammenfügen
+# Merge Databases
 
-Mit dieser Funktion können Sie mehrere Datenbanken zu einer zusammenfügen.
+This function allows you to merge multiple databases into one.
 
 ![Merge Database](images/MigrateMergeSQLSQL.png)

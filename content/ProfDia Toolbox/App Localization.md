@@ -2,6 +2,9 @@
 title: App Localization
 draft: false
 tags:
+  - toolbox
+  - configuration
+  - localization
 ---
 
 This function enforces a specific language in all internationalized GTR software products (if available). By default, the application language is based on the operating system language.

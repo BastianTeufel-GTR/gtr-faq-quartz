@@ -2,6 +2,9 @@
 title: Installation and Training Procedure
 draft: false
 tags:
+  - profdia
+  - installation
+  - training
 ---
 # Requirements for a successful training session
 

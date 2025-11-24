@@ -2,6 +2,10 @@
 title: Setup Microsoft SQL Server
 draft: false
 tags:
+  - database
+  - mssql
+  - setup
+  - server
 ---
 
 ## Preface
