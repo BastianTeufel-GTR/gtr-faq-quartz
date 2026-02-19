@@ -10,7 +10,7 @@ cssclasses:
 ---
 # GDX Server Development Roadmap
 
-GDX-Server is a centralized data exchange server for ProfDia/ProfDiaF/ExProg environments. It connects company locations through a modern REST API, enabling seamless project data flow across an entire organization. xxx
+GDX-Server is a centralized data exchange server for ProfDia/ProfDiaF/ExProg environments. It connects company locations through a modern REST API, enabling seamless project data flow across an entire organization. 
 
 
 > [!quote] Shape the Future of GDX Server
