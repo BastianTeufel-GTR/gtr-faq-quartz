@@ -1,15 +1,20 @@
 ---
-title: Welcome
+title: Welcome to the GTR FAQ
 draft: false
 tags:
   - home
 ---
 
-Welcome to the GTR FAQ Collection
+Welcome to the GTR FAQ
 
 Use the navigation menu or the search box to find help on specific topics.
 
 ## Recent Updates
+
+### February 2026
+
+**New Documentation**
+- [[GDX-Server]] - Development roadmap for the GDX Server centralized data exchange platform
 
 ### November 2025
 

@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:quartz.jzhao.xyz)"
+      "WebFetch(domain:quartz.jzhao.xyz)",
+      "Bash(done)",
+      "Bash(xargs:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(node_modules/.bin/tsc:*)"
     ],
     "deny": [],
     "ask": []
