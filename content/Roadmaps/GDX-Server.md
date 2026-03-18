@@ -16,15 +16,16 @@ GDX-Server is a centralized data exchange server for ProfDia/ProfDiaF/ExProg env
 > [!quote] Shape the Future of GDX Server
 > Active users with a valid GDX-Server license can take part in the development process. **Pro** and **Enterprise** subscribers can suggest new features and help prioritize what gets built next.
 >
-> We are planning to provide access to a **GTR Discord Server** for active subscribers — a direct line to the development team at GTR.
+> We are planning to provide access to a **GTR Matrix Server** for active subscribers - a direct line to the development team at GTR.
 
 ## Planned Features
 
 Features are marked with one of three priority levels:
 
-- `Next up` — approaching active development
-- `Planned` — confirmed, not yet scheduled
-- `Under consideration` — likely but not committed
+- `In Development` - currently in development
+- `Next up` - approaching active development
+- `Planned` - confirmed, not yet scheduled
+- `Under consideration` - likely but not committed
 
 > [!info] Basic — Included in All Tiers
 >
@@ -53,7 +54,7 @@ Features are marked with one of three priority levels:
 > Tabular query of machine data collection records with CSV export.
 >
 > **Statistical MDE Data Analysis** `Planned`
-> Server-side statistical evaluations of machine data — no local processing required.
+> Server-side statistical evaluations of machine data - no local processing required.
 >
 > **Extended External authentication** `Planned` Extend the existing 3rd party authentication against Active Directory, LDAP, or any REST-based system
 > **MDE Data Report Generation** `Under consideration`
