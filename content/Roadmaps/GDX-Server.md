@@ -29,7 +29,7 @@ Features are marked with one of three priority levels:
 
 > [!info] Basic — Included in All Tiers
 >
-> **==Web Admin Panel==** `Next up`
+> **==Web Admin Panel Localization==** `Next up`
 > Replaces the separate Config Client. All server administration tasks available directly in the web UI.
 >
 > **Project Management Web Interface** `Planned`
@@ -40,12 +40,9 @@ Features are marked with one of three priority levels:
 >
 > **Automatic License Renewal** `Planned`
 > Automatically applies follow-up licenses on subscription renewal.
->
-> **Docker Deployment** `Planned`
-> Official Docker images for containerized deployment.
 > 
-> **PostgreSQL Support** `Under consideration`
-> PostgreSQL as an additional supported database engine.
+> **Project Dashboard**  `Under consideration`
+> Full Project Dashboard as a replacement or addition to NCPro_DB (ProfDia Database GUI)
 >
 
 > [!tip] Pro / Enterprise
@@ -57,19 +54,23 @@ Features are marked with one of three priority levels:
 > Server-side statistical evaluations of machine data - no local processing required.
 >
 > **Extended External authentication** `Planned` Extend the existing 3rd party authentication against Active Directory, LDAP, or any REST-based system
+> 
 > **MDE Data Report Generation** `Under consideration`
 > Templated report generation for machine data analysis via TemplatePro.
 >
 > **Machine State Visualization** `Under consideration`
 > Dashboard showing states of known machines. Auto-discovery from time tracking entries with blacklist management for decommissioned machines.
+> 
+> **PostgreSQL Support** `Under consideration`
+> PostgreSQL as an additional supported database engine.
 
 > [!example] Enterprise
 >
-> **==Database Synchronization==** `Next Up`
-> Scheduled synchronization of distributed databases to the central GDX Server at configurable intervals.
->
 > **Cross-Server Communication** `Under consideration`
 > Project lookups routed transparently across all connected GDX Server instances.
+> 
+  **Docker Deployment** `Planned`
+> Official Docker images for containerized deployment.
 
 ## Already Available
 
@@ -85,12 +86,15 @@ Features are marked with one of three priority levels:
 > - Granular feature licensing per Version (Basic, Pro, Enterprise)
 > - Client-side integration in ProfDia(F) project management
 > - Security: JWT/HMAC-SHA512 authentication, Bcrypt password hashing, HTTPS/TLS, CORS
+> - **Web Admin Panel Localization**: All server administration tasks available directly in the web UI.
 >
-> **Pro / Enterprise:**
+> **Pro:**
 > - Redis caching for high-frequency queries
 > - Machine time tracking data retrieval with start/finish times and durations
 > - External authentication
 > - Built-in diagnostics for testing and troubleshooting authentication configurations
 >
 > **Enterprise:**
+> - all from Pro
 > - Unlimited project database connections
+> - **Database Synchronization**: Scheduled synchronization of distributed databases to the central GDX Server at configurable intervals.
