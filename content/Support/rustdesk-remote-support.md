@@ -57,7 +57,7 @@ Then:
 4. Open the **ID/Relay-Server** section.
 5. Click the **Import from clipboard** icon at the top right of the dialog.
 
-![RustDesk ID/Relay-Server import dialog](images/rustdesk-relay-server.png)
+![[rustdesk-relay-server.png]]
 
 After the import, the **ID-Server** field should show `rustdesk.gtr.de` and the **Key** field should be filled in. Click **OK** to save.
 
