@@ -1,5 +1,5 @@
 ---
-title: "RustDesk Migration"
+title: "RustDesk Technical Information"
 draft: false
 tags:
   - infrastructure
@@ -10,98 +10,87 @@ tags:
 
 
 > [!tldr] tl;dr
-> - GTR will stop using TeamViewer starting on January 1st, 2026
-> - [Download Latest Rustdesk Windows Version](https://staticfiles.gtr.de/rustdesk-latest-x86_64.exe)
-> - [Download Latest Rustdesk Windows Version as ZIP File](https://staticfiles.gtr.de/rustdesk-latest-x86_64.zip)
+> - GTR uses **RustDesk** for remote support. TeamViewer is no longer in use.
+> - [Download the RustDesk bundle (ZIP)](https://dl.gtr.de/rd)
+> - GTR runs its own RustDesk rendezvous and relay server at `rustdesk.gtr.de`, hosted in Germany.
 
 ## Overview
 
-We are transitioning our remote support infrastructure from TeamViewer to **RustDesk** to provide better security, transparency, and cost efficiency. This document guides both end-users and IT administrators through the transition process and technical requirements for cloud-hosted remote support sessions. The transition to RustDesk will be finished until the end of 2025.
-
-**Key Advantages of RustDesk:**
-- Open-source codebase with transparent security model and public audit possibilities
-- End-to-end encryption (RSA 4096 + AES 256-bit)
-- Improved performance and lower latency
-- Industry-standard security protocols
+RustDesk is an open-source remote support tool (GPLv3). GTR operates its own rendezvous and relay infrastructure at `rustdesk.gtr.de` so that session metadata stays on GTR-controlled servers in Germany. Session content is end-to-end encrypted (RSA 4096 + AES 256) and cannot be decrypted by the server, even when traffic is relayed.
 
 ---
 
-## For End Users
+## The ZIP Package: Three Executables
 
-### What's Changing?
+The bundle available at [https://dl.gtr.de/rd](https://dl.gtr.de/rd) contains three executables:
 
-TeamViewer is being replaced with RustDesk for remote support sessions. The user experience will be familiar, but with improved speed and security.
-
-### System Requirements
-
-RustDesk is compatible with a wide range of platforms:
-
-| Operating System | Minimum Version |
+| Executable | Purpose |
 |---|---|
-| **Windows** | Windows 7 and later |
-| **macOS** | macOS 10.12 (Sierra) and later |
-| **Linux** | Ubuntu 16+, CentOS, Fedora, Debian derivatives, Arch, openSUSE, NixOS |
-| **Other** | Android, iOS (receive-only), Web browser access |
+| `rustdesk.exe` | Stock RustDesk binary, latest version. |
+| `rustdesk-gtr.exe` | GTR caller. Starts RustDesk with the GTR server configuration injected (ID server, relay, public key) so the client connects through `rustdesk.gtr.de` instead of the public RustDesk servers. This is the executable end users should normally start. |
+| `rustdesk-reset.exe` | Reverts the GTR-specific configuration. Only needed if a customer also receives RustDesk support from another company that uses the public servers or its own infrastructure. |
 
-**Hardware Requirements:**
-- Modest CPU and RAM requirements; runs on older systems
-- Minimum 1 Mbps internet connection recommended
-
-### Getting Started
-
-1. **Download**: Directly download the latest version as an [Executable](https://staticfiles.gtr.de/rustdesk-latest-x86_64.exe) or [ZIP File](https://staticfiles.gtr.de/rustdesk-latest-x86_64.zip) from GTR's secure server.
-   Alternatively, visit [rustdesk.com](https://rustdesk.com) or [rustdesk on github](https://github.com/rustdesk/rustdesk/releases/download/latest) and download the client for your operating system
-2. **Install**: Depending on the Operating Systems, an Installation may be required. 
-   Follow standard installation process, by executing the downloaded file.
-   **On Windows RustDesk can be run without installation**
-3. **Connect**: Pass the automatically generated ID and one time password to the GTR engineer to establish the connection.
-4. **Session**: Support engineer/technician controls your desktop with your permission
-
-### Technical Comparison: TeamViewer vs RustDesk
-
-| Feature               | TeamViewer                  | RustDesk                               |
-| --------------------- | --------------------------- | -------------------------------------- |
-| **Code Transparency** | Proprietary (closed-source) | Open Source (GPLv3)                    |
-| **Encryption**        | AES-256                     | RSA 4096 + AES-256 (end-to-end)        |
-| **Server Hosting**    | Cloud-only                  | Cloud-hosted                           |
-| **Performance**       | Good                        | Excellent (optimized P2P architecture) |
-| **Connection Setup**  | Simple                      | Simple                                 |
-| **Port Usage**        | Dynamic                     | Fixed (see admin section)              |
-| **Auditability**      | Limited (proprietary)       | Full (open-source)                     |
-
-### What to Expect During a Support Session
-
-- You will see the RustDesk client request your permission before any connection begins
-- Your desktop will be visible to the support technician while the session is active
-- Audio and file transfer may be available depending on session configuration
-- You can terminate the connection at any time
-- All sessions are encrypted end-to-end
+On Windows no installation is required; the executables can be run directly from the unpacked ZIP.
 
 ---
 
-## For IT Administrators
+## Connection Flow
 
-### Network Requirements - Client-Side Outbound Connections
+1. Both peers (customer PC and GTR engineer PC) register with the rendezvous server (`hbbs`) at `rustdesk.gtr.de`.
+2. When a session is initiated, the rendezvous server brokers a NAT hole-punching handshake between the two peers.
+3. If NAT traversal succeeds, the session runs as a **direct peer-to-peer connection** between the two PCs. The GTR server is no longer in the data path.
+4. If NAT traversal fails (for example behind symmetric NAT or very restrictive firewalls), traffic falls back through the GTR relay server (`hbbr`, also on `rustdesk.gtr.de` in Germany).
+5. In both cases the session payload is end-to-end encrypted. The relay cannot decrypt it.
 
-RustDesk requires specific outbound network access to function properly. Configure your firewall to allow the following **outbound** connections from client machines:
+---
 
-#### Required Outbound Ports
+## Manual Configuration
+
+Use this if RustDesk is already installed on the customer machine and the user wants to point it at the GTR server without running `rustdesk-gtr.exe`.
+
+Copy the GTR configuration string:
+
+```
+9JSPB12SrhEMlR3byk3TJhVS4RUTHZlTktkRDJHMvVHZZlEZSN3Y6dmV6VFMQJiOikXZrJCLiIiOikGchJCLiIiOikXYsVmciwiIlRmLyR3Zus2clRGdzVnciojI0N3boJye
+```
+
+Then in the RustDesk client:
+
+1. Open **Settings**.
+2. Go to **Network**.
+3. Click **Unblock Network Settings** (administrator privileges are required).
+4. Open the **ID/Relay-Server** section.
+5. Click **Import from clipboard** (the small icon at the top right of the dialog).
+
+![RustDesk ID/Relay-Server import dialog](images/rustdesk-relay-server.png)
+
+After import, the **ID-Server** field should read `rustdesk.gtr.de` and the **Key** field should be populated.
+
+---
+
+## Network Requirements
+
+### Reachability
+
+Client machines must be able to reach `rustdesk.gtr.de` outbound. DNS resolution must work for this hostname.
+
+### Required Outbound Ports
 
 | Protocol | Port | Direction | Purpose | Notes |
 |---|---|---|---|---|
-| **TCP** | 21115 | Outbound | Control & command connection | Primary connection |
-| **TCP** | 21116 | Outbound | Relay fallback | Used if UDP blocked |
+| **TCP** | 21115 | Outbound | Control and command connection | Primary connection |
+| **TCP** | 21116 | Outbound | Relay fallback | Used if UDP is blocked |
 | **UDP** | 21116 | Outbound | Relay connection | Preferred for better performance |
 
-**Important Notes:**
-- Port 21115 (TCP) handles command and control signals
-- Port 21116 should be enabled for **both TCP and UDP** for optimal performance
-- UDP connection is attempted first; TCP is used as fallback if UDP is blocked
-- All connections use TLS 1.2 or higher encryption
+**Important notes:**
+- Port 21115 (TCP) handles command and control signals.
+- Port 21116 should be enabled for both TCP and UDP for optimal performance.
+- UDP is attempted first; TCP is used as fallback if UDP is blocked.
+- All connections use TLS 1.2 or higher.
 
-#### Recommended Firewall Rules
+### Recommended Firewall Rules
 
-**Windows Firewall (Outbound Rule)**
+**Windows Firewall (outbound rule)**
 
 ```
 Rule Name: RustDesk Remote Support
@@ -146,68 +135,72 @@ Firewall Rule:
 
 ### VPN & Proxy Configuration
 
-**VPN Passthrough:**
-- RustDesk works transparently through most VPN connections without special configuration
-- Ensure VPN network policies don't block ports 21115/21116
-- For split-tunnel VPNs, ensure RustDesk traffic routes through the VPN tunnel
+**VPN passthrough:**
+- RustDesk works transparently through most VPN connections without special configuration.
+- Ensure VPN network policies do not block ports 21115/21116.
+- For split-tunnel VPNs, ensure RustDesk traffic routes through the VPN tunnel.
 
-**Proxy Support:**
-- RustDesk supports HTTP and HTTPS proxy with authentication
-- Configure proxy settings in the RustDesk client:
-  - Open RustDesk → Settings → Network
-  - Enter proxy server address, port, username, and password (if required)
-- Proxy authentication supports basic credentials
-- If your firewall performs SSL inspection, consider adding exceptions for RustDesk connections to avoid performance issues
+**Proxy support:**
+- RustDesk supports HTTP and HTTPS proxy with authentication.
+- Configure proxy settings in the RustDesk client (Settings → Network).
+- Enter proxy server address, port, username, and password (if required).
+- Proxy authentication supports basic credentials.
+- If the firewall performs SSL inspection, consider adding exceptions for RustDesk connections to avoid performance issues.
 
-**Firewall SSL Inspection:**
-- If your firewall performs SSL/TLS inspection, whitelist RustDesk servers or disable inspection for RustDesk traffic
-- SSL inspection can cause connection delays or failures
+**Firewall SSL inspection:**
+- If the firewall performs SSL/TLS inspection, whitelist RustDesk servers or disable inspection for RustDesk traffic.
+- SSL inspection can cause connection delays or failures.
 
-### Bandwidth & Performance Considerations
+---
 
-**Connection Overhead:**
-- Baseline (idle): 50-100 KB/s
-- Active session (screen sharing): 200 KB/s - 2 MB/s (depends on resolution and activity)
-- Audio only: 20-50 KB/s
-- File transfer: Varies based on file size and network speed
+## Bandwidth & Performance Considerations
 
-**Typical Bandwidth Usage:**
-- Standard screen (1920x1080): 500 KB/s - 1.5 MB/s for typical desktop activity
-- High-resolution (2560x1440): 1 MB/s - 2.5 MB/s
-- Low-resolution/minimal updates: 100-300 KB/s
+**Connection overhead:**
+- Baseline (idle): 50 to 100 KB/s
+- Active session (screen sharing): 200 KB/s to 2 MB/s (depends on resolution and activity)
+- Audio only: 20 to 50 KB/s
+- File transfer: varies with file size and network speed
 
-**Recommended Minimum Connection Speed:**
+**Typical bandwidth usage:**
+- Standard screen (1920x1080): 500 KB/s to 1.5 MB/s for typical desktop activity
+- High-resolution (2560x1440): 1 MB/s to 2.5 MB/s
+- Low-resolution / minimal updates: 100 to 300 KB/s
+
+**Recommended minimum connection speed:**
 - 1 Mbps for basic remote support
 - 5 Mbps for comfortable interactive sessions
 - 10+ Mbps for multiple concurrent sessions or high-resolution screens
 
 **Latency:**
-- Direct connections: <50ms typical
-- Relay connections: <200ms typical
-- Connection type depends on network NAT configuration and firewall settings
-
-### IT Administrator Deployment Checklist
-
-- [ ] Review and approve firewall port requirements (21115 TCP, 21116 TCP/UDP outbound)
-- [ ] Configure firewall rules in your environment
-- [ ] Test RustDesk connectivity from sample client systems behind firewall
-- [ ] Verify proxy/SSL inspection exceptions are in place if applicable
-- [ ] Document the connection process for your help desk team
-- [ ] Test file transfer functionality if required for support workflows
-- [ ] Establish audit logging requirements and procedures
-- [ ] Create troubleshooting documentation for help desk
+- Direct connections: below 50 ms typical
+- Relay connections: below 200 ms typical
+- Connection type depends on NAT configuration and firewall settings.
 
 ### Bandwidth Planning for Administrators
 
-**Capacity Calculations:**
-- For concurrent sessions: Multiply typical bandwidth per session by max concurrent support sessions
-- Example: 3 concurrent sessions × 1 MB/s = 3 MB/s minimum pipe capacity
-- Add 20-30% overhead for protocol negotiation and network variations
+**Capacity calculations:**
+- For concurrent sessions, multiply typical bandwidth per session by the maximum number of concurrent support sessions.
+- Example: 3 concurrent sessions × 1 MB/s = 3 MB/s minimum pipe capacity.
+- Add 20 to 30 percent overhead for protocol negotiation and network variations.
 
-**Network Policy Considerations:**
-- Configure QoS (Quality of Service) rules if RustDesk conflicts with business-critical traffic
-- RustDesk can be prioritized as lower priority than production traffic
-- Monitor bandwidth usage to identify any anomalies
+**Network policy considerations:**
+- Configure QoS rules if RustDesk conflicts with business-critical traffic.
+- RustDesk can be prioritized below production traffic.
+- Monitor bandwidth usage to identify anomalies.
+
+---
+
+## IT Administrator Deployment Checklist
+
+- [ ] Review and approve firewall port requirements (21115 TCP, 21116 TCP/UDP outbound).
+- [ ] Verify `rustdesk.gtr.de` is reachable and resolvable from client networks.
+- [ ] Configure firewall rules in your environment.
+- [ ] Test RustDesk connectivity from sample client systems behind the firewall.
+- [ ] Verify proxy or SSL inspection exceptions are in place if applicable.
+- [ ] Document the connection process for the help desk team.
+- [ ] Test file transfer functionality if required for support workflows.
+- [ ] Establish audit logging requirements and procedures.
+- [ ] Create troubleshooting documentation for the help desk.
 
 ---
 
@@ -217,38 +210,39 @@ Firewall Rule:
 
 **Problem: "Cannot connect to RustDesk server"**
 
-**Troubleshooting steps:**
-1. Verify TCP 21115 and UDP/TCP 21116 are open outbound in firewall
-2. If behind proxy: Verify proxy settings in RustDesk client (Settings → Network)
-3. Temporarily disable VPN to test direct connectivity
-4. Check if SSL inspection is blocking the connection; try adding exception
+Troubleshooting steps:
+1. Verify TCP 21115 and UDP/TCP 21116 are open outbound in the firewall.
+2. Verify `rustdesk.gtr.de` is resolvable (`nslookup rustdesk.gtr.de`).
+3. If behind a proxy, verify proxy settings in the RustDesk client (Settings → Network).
+4. Temporarily disable VPN to test direct connectivity.
+5. Check if SSL inspection is blocking the connection; try adding an exception.
 
 **Problem: "Connection times out after initial connect"**
 
-**Troubleshooting steps:**
-1. May indicate relay server issue; ensure both TCP and UDP rules are open
-2. Verify UDP 21116 is specifically allowed in firewall
-3. Test latency: `ping www.rustdesk.com`
-4. If latency is very high (>500ms), connection may be routed through relay
-5. Try switching between direct/relay modes if available in client settings
+Troubleshooting steps:
+1. May indicate a relay server issue; ensure both TCP and UDP rules are open.
+2. Verify UDP 21116 is specifically allowed in the firewall.
+3. Test latency: `ping rustdesk.gtr.de`.
+4. If latency is very high (above 500 ms), the connection may be routed through the relay.
+5. Try switching between direct and relay modes if available in client settings.
 
 ### Performance Issues
 
 **Slow screen updates:**
-- Check available bandwidth using speedtest or similar tool
-- Reduce screen resolution or quality settings in RustDesk client
-- Verify no competing network usage on that connection
-- Switch from relay to direct connection if possible
+- Check available bandwidth with a speed test.
+- Reduce screen resolution or quality settings in the RustDesk client.
+- Verify no competing network usage on the connection.
+- Switch from relay to direct connection if possible.
 
 **High latency:**
-- Latency >100ms may indicate relay connection instead of direct
-- Check network path with tracert/traceroute to see route to server
-- If using VPN, verify VPN server location is optimal
+- Latency above 100 ms may indicate a relay connection instead of a direct one.
+- Check the network path with `tracert` or `traceroute` to inspect the route.
+- If using VPN, verify the VPN server location is optimal.
 
 **Audio/Video issues:**
-- Try disabling audio if video connection is priority
-- Reduce video resolution in client settings
-- Verify network bandwidth is sufficient for session type
+- Try disabling audio if the video connection is the priority.
+- Reduce video resolution in client settings.
+- Verify network bandwidth is sufficient for the session type.
 
 ### Common Error Messages
 
@@ -256,45 +250,39 @@ Firewall Rule:
 |---|---|---|
 | "Failed to authenticate" | Credentials incorrect or session expired | Verify authentication credentials; restart client |
 | "Network unreachable" | Firewall blocking ports | Check firewall rules; verify ports 21115/21116 are open |
-| "Connection refused" | Server unreachable | Verify server address in settings; check DNS resolution |
-| "Relay server error" | Can't reach relay | Both TCP and UDP on 21116 must be open |
+| "Connection refused" | Server unreachable | Verify `rustdesk.gtr.de` is resolvable; check DNS |
+| "Relay server error" | Cannot reach relay | Both TCP and UDP on 21116 must be open |
 
 ---
+
 ## Support & Resources
 
-**For End-Users:**
-- RustDesk Download: https://staticfiles.gtr.de/rustdesk-latest-x86_64.exe
-- User Documentation: https://rustdesk.com/docs/
+**For IT administrators:**
+- RustDesk documentation: https://rustdesk.com/docs/
+- GitHub repository: https://github.com/rustdesk/rustdesk
+- Security advisories: monitor GitHub releases for updates.
+- Configuration guides: https://rustdesk.com/docs/en/client/
 
-**For IT Administrators:**
-- RustDesk Documentation: https://rustdesk.com/docs/
-- GitHub Repository: https://github.com/rustdesk/rustdesk
-- Security Advisories: Monitor GitHub releases for updates
-- Configuration Guides: https://rustdesk.com/docs/en/client/
-
-**Internal Support:**
+**Internal support:**
 - Email: gtr-aa@gtr.de
-- Support Portal: [Support Portal](https://tickets.gtr.de)
-- Help Desk Phone: +49 7361 94 11 0
+- Support portal: [Support Portal](https://tickets.gtr.de)
+- Help desk phone: +49 7361 94 11 0
 
 ---
 
 ## FAQ
 
 **Q: Is RustDesk safe?**
-A: Yes. RustDesk uses end-to-end encryption with RSA 4096-bit keys and AES-256 encryption. The open-source code has been publicly audited, and the support servers are managed professionally.
+A: Yes. RustDesk uses end-to-end encryption with RSA 4096-bit keys and AES-256. The open-source code has been publicly audited, and the GTR-hosted support servers are managed professionally.
+
+**Q: Where does the connection go? Is my data leaving Germany?**
+A: GTR operates its own RustDesk rendezvous and relay server (`rustdesk.gtr.de`), hosted in Germany. When a session starts, the GTR server helps both PCs find each other, then the actual remote-control traffic is established directly between the two PCs (peer-to-peer) whenever the network allows it. If a direct connection is not possible, traffic is relayed through the GTR server in Germany. No US cloud provider is involved, and no session content is tracked or stored. All traffic is end-to-end encrypted.
 
 **Q: Will my files be visible during a support session?**
-A: The technician will have full screen access during the session. File transfer is a separate function that requires explicit permission. All data remains encrypted.
+A: The technician has full screen access during the session. File transfer is a separate function that requires explicit permission. All data remains encrypted.
 
 **Q: What happens to my data?**
-A: All data is encrypted end-to-end. RustDesk servers cannot decrypt your session data. For cloud-hosted deployments, data in transit is protected but not stored on servers.
-
-**Q: Do I need to allow TeamViewer anymore?**
-A: No, after the transition period TeamViewer access can be disabled.
-
-**Q: Why is RustDesk better than TeamViewer?**
-A: RustDesk offers open-source transparency, better performance, lower cost, and end-to-end encryption. The code can be audited publicly, providing better security assurance.
+A: All data is encrypted end-to-end. The GTR rendezvous and relay servers cannot decrypt session data. Data in transit is protected, and session content is not stored on servers.
 
 **Q: What if my firewall is very restrictive?**
 A: RustDesk can work through proxies and most firewalls using ports 21115 and 21116. If all ports are blocked, contact IT to discuss exceptions. RustDesk can also work through VPNs.
