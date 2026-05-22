@@ -76,6 +76,17 @@ After the import, the **ID-Server** field should show `rustdesk.gtr.de` and the 
 
 ---
 
+If the import using the configuration string does not work you can also copy the ID server name and the public key and paste it directly:
+
+```ID-Server
+rustdesk.gtr.de
+```
+
+```Key
+P0UzVgzcsRdIYduo0rCFKdNVGMDxIXIOy2ote0HkKmA=
+```
+
+
 ## Privacy and security
 
 - GTR runs its own RustDesk server in Germany. No US cloud provider is involved.
