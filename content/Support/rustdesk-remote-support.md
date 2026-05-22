@@ -50,11 +50,24 @@ Copy this configuration text:
 
 Then:
 
-1. Open RustDesk.
-2. Go to **Settings** → **Network**.
-3. Click **Unblock Network Settings**.
+1. Open RustDesk
+2. Go to **Settings**
+
+![[rustdesk-main-ui.png]]
+
+3. Go to **Network**
+
+![[rustdesk-settings.png]]
+
+4. Click **Unblock Network Settings**.
+
+![[rustdesk-settings-unlock.png]]
+
    > **Note:** This step may require administrator rights. If you do not have them, please ask your IT administrator for help.
 4. Open the **ID/Relay-Server** section.
+
+![[rustdesk-settings-relay.png]]
+
 5. Click the **Import from clipboard** icon at the top right of the dialog.
 
 ![[rustdesk-relay-server.png]]
