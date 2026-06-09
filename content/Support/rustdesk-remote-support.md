@@ -74,6 +74,13 @@ Then:
 
 After the import, the **ID-Server** field should show `rustdesk.gtr.de` and the **Key** field should be filled in. Click **OK** to save.
 
+After the successful configuration, the RustDesk software should show **Ready** in the status bar without additional information.
+
+![[rustdesk-success.png]]
+
+
+
+
 ---
 
 If the import using the configuration string does not work you can also copy the ID server name and the public key and paste it directly:
