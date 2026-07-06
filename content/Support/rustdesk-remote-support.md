@@ -27,6 +27,13 @@ RustDesk is the tool GTR uses to connect to your computer for remote support. Yo
 5. When the engineer connects, RustDesk will ask you for permission. Click **Accept** to start the session.
 6. Close RustDesk when the session is finished.
 
+> [!warning] Warning
+> Please check that when running the rustdesk-gtr.exe, the main window of the RustDesk Application looks exactly as shown at the bottom of this page.
+> If the Statusbar does not only show "Ready" then follow the next steps for the manual setup.
+
+
+
+
 ---
 
 ## If another company also supports you via RustDesk
