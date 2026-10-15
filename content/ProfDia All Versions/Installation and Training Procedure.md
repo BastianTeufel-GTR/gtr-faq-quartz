@@ -15,7 +15,7 @@ tags:
 - The Operator should have received a training on the machine and control.
 
 > [!note] Note
-> PC requirements can be found e.g. for ProfDia Fanuc here: [[Prerequisites]]
+> The PC requirements for all ProfDia versions are listed here: [[PC Requirements]]
 
 
 # Preparation for the GTR Training
