@@ -11,6 +11,11 @@ Use the navigation menu or the search box to find help on specific topics.
 
 ## Recent Updates
 
+### October 2026
+
+**Improved Articles**
+- [[GDX-Server]] - Roadmap updated: Project Dashboard, Time Tracking Web Interface and web UI localization are now available. Database connection limits per tier added (Basic 1, Pro 3, Enterprise unlimited).
+
 ### February 2026
 
 **New Documentation**
