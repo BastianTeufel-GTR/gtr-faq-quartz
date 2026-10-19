@@ -70,7 +70,7 @@ Features are marked with one of four priority levels:
 > - **Project Dashboard**: Browser view of all projects with search, sorting, column selection and CSV export. Documents open in the browser or download, and each project downloads as a ZIP package.
 > - User management with role-based access control
 > - **Permission Groups**: Per-database groups decide who sees a database and who may open documents, download, export or upload projects. Default groups apply to new users.
-> - **Project Upload via Web Interface**: Upload project ZIP packages in the browser. ZIP files built by hand without project metadata are accepted with a project ID.
+> - **Project Upload via Web Interface**: Upload project ZIP packages in the browser. ZIP files exported by ProfDia® without project metadata are accepted with a project ID.
 > - Interactive API documentation (Swagger UI)
 > - Request analytics and performance monitoring
 > - Redis caching for high-frequency queries. A Redis server is required in all tiers.
