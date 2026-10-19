@@ -15,6 +15,7 @@ Use the navigation menu or the search box to find help on specific topics.
 
 **Improved Articles**
 - [[GDX-Server]] - Roadmap updated: Project Dashboard, Time Tracking Web Interface and web UI localization are now available. Database connection limits per tier added (Basic 1, Pro 3, Enterprise unlimited).
+- [[GDX-Server]] - Roadmap updated: Project upload via the web interface and permission groups are now available in all tiers. Time tracking permissions added to Pro.
 
 ### February 2026
 

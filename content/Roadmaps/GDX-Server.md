@@ -34,9 +34,6 @@ Features are marked with one of four priority levels:
 > **Automatic License Renewal** `Planned`
 > Automatically applies follow-up licenses on subscription renewal.
 >
-> **Project Upload via Web Interface** `Under consideration`
-> Upload projects to the server through the browser.
->
 
 > [!tip] Pro / Enterprise
 >
@@ -72,6 +69,8 @@ Features are marked with one of four priority levels:
 > - Document management (PDF, images, technical drawings) linked to projects
 > - **Project Dashboard**: Browser view of all projects with search, sorting, column selection and CSV export. Documents open in the browser or download, and each project downloads as a ZIP package.
 > - User management with role-based access control
+> - **Permission Groups**: Per-database groups decide who sees a database and who may open documents, download, export or upload projects. Default groups apply to new users.
+> - **Project Upload via Web Interface**: Upload project ZIP packages in the browser. ZIP files built by hand without project metadata are accepted with a project ID.
 > - Interactive API documentation (Swagger UI)
 > - Request analytics and performance monitoring
 > - Redis caching for high-frequency queries. A Redis server is required in all tiers.
@@ -86,6 +85,7 @@ Features are marked with one of four priority levels:
 > - Up to 3 project database connections
 > - Machine time tracking data retrieval with start/finish times and durations
 > - **Time Tracking Web Interface**: Tabular view of machine data collection records with date range filter, CSV export and ZIP download of attached project files
+> - Time tracking permissions per group: view, download, CSV export and write access
 > - External authentication against SAP, Active Directory/LDAP or any REST-based system
 > - Built-in diagnostics for testing and troubleshooting authentication configurations
 >
